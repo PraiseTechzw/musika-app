@@ -1,50 +1,44 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# Musika: Offline Shop Management App
 
-## Get started
+Musika is an offline-first Expo React Native app designed for small shop owners to manage their inventory, track profits, and organize products. The app is strictly offline and does not require any internet connection.
 
-1. Install dependencies
+## Features
 
+- **Offline Only:** All features work without an internet connection. No data is sent or received online.
+- **Product Management:** Add, edit, and delete products with fields for name, quantity, price, profit, and an optional image.
+- **Image Upload:** Attach and preview images for each product, stored locally on the device.
+- **Inventory & Profit Tracking:** View total stock and profit summaries at a glance.
+- **Analytics:** (Coming soon) Visual summaries and trends for your shop.
+- **Low Stock Reminders:** (Coming soon) Get notified when products are running low.
+- **User-Friendly UI:** Simple navigation with tabs for Home, Products, Analytics, Reminders, and Explore.
+
+## Usage
+
+1. Install dependencies:
    ```bash
    npm install
    ```
-
-2. Start the app
-
+2. Start the app:
    ```bash
    npx expo start
    ```
+3. Use the Products tab to add and manage your shop's inventory. Attach images and track profit for each product.
+4. Check the Analytics and Reminders tabs for future features.
 
-In the output, you'll find options to open the app in a
+## Project Structure
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- `app/products/` — Product list and add/edit screens
+- `app/analytics.tsx` — Analytics (future)
+- `app/reminders.tsx` — Low stock reminders (future)
+- `app/(tabs)/_layout.tsx` — Main tab navigation
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Requirements
 
-## Get a fresh project
+- Expo Go or compatible Expo development environment
+- No network connection required after installation
 
-When you're ready, run:
+## Notes
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- All data is stored locally on the device. No cloud or remote sync is used.
+- This app is designed for simplicity and reliability for small business owners.
